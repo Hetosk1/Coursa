@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 250px; /* Set the width of your sidebar */
+    height: 100vh; /* Set the height of the sidebar to cover the full viewport height */
+    background-color: #f0f0f0; /* Set the background color of the sidebar */
+    float: left; /* Float the sidebar to the left side */
+}
+
+.main-content {
+    margin-left: 250px; /* Set a margin on the left to create space for the sidebar */
+    padding: 20px; /* Optional padding to create space between the sidebar and main content */
+}
+
+.course-single{
+    display: flex;
+    flex-direction: row;
+}
+
+.course-img{
+    margin-right: 30px;
+}
+
+.course-header{
+    font-size: 150%;
+}
+
+.course-header a{
+    text-decoration: none;
+    color: black;
+}
+
+.course-header a:hover{
+    font-weight: 600;
+}
+
+.course-tutor{
+    /* font-size: 150%; */
+}
+
+.course-price{
+    font-size: 150%;
+    font-weight: 700;
+}
+
+.dropdown{
+    display: none;
+}
+
+.course-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+@media screen and (max-width: 956px){
+    .sidebar{
+        display: none;
+    }
+    
+    .main-content{
+    margin-left: 0px;
+    }
+
+    .dropdown{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    .course-content{
+        display: flex;
+        flex-direction: column;
+    } 
+}
+
+@media screen and (max-width: 651px){
+    .course-single{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.sidebar li{
+    text-decoration: none;
+    color: #000;
+    /* border: 1px solid black; */
+    margin-bottom: 10%;
+    padding: 5%;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.sidebar li:hover{
+    background: rgba(187, 82, 236, 0.7); 
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: black;
+}
+
+.c{
+    color: rgba(118, 11, 167, 0.7);
+    font-weight: 800;
+    font-size: 110%;
+}

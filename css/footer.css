@@ -1,0 +1,76 @@
+footer{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 15%;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-footer{
+  display: flex;
+  flex-direction: row;
+}
+
+.right-footer button{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.lower-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 2.5%;
+  padding-top: 2%;
+}
+
+.logo{
+  font-size: 60px;
+}
+
+@media screen and (max-width: 1000px){
+  .become-an-instructor{
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .instructor-instructions{
+    width: 80%;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer button{
+    margin-left: 30px;
+  }
+  
+  .left-footer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lower-footer{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.c-f{
+  color: rebeccapurple ;
+  font-weight: 900;
+}
+
+.c-f::selection{
+  background-color: #97dad7;
+  color: rebeccapurple;
+  font-weight: 900;
+}

@@ -1,0 +1,149 @@
+
+.header-one{
+    text-align: center;
+    font-size: 310%;
+}
+.header-two{
+    text-align: center;
+}
+
+hr{
+    text-align: center;
+    width: 10%;
+    height: 40%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.image{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.image img{
+    width: 70%;
+    height: 10%;
+}
+
+.credits{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 180%;
+}
+
+.tech-stack{
+    margin-top: 5%;
+}
+
+.tech-stack-header{
+    font-size: 200%;
+    text-align: center;
+}
+
+.tech-stack-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tech-stack-images .img{
+    margin-top: 2%;
+    margin-left: 4%;
+    background: rgb(229, 228, 228);
+    width: 15%;
+    border-radius: 10px;
+    border: 2px solid rgb(159, 157, 157);
+}
+
+.tech-stack-images .img img{
+    padding: 10%;
+}
+
+.intro-to-course{
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.intro-to-course-header{
+    font-size: 110%;
+    margin-bottom: 5%;
+}
+
+.intro-to-course-list{
+    font-size: 110%;
+}
+
+
+.chapters{
+    margin: 5%;
+}
+
+.chapter-header{
+    text-align: center;
+    font-size: 130%;
+    font-weight: 800;
+}
+
+.chapter-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 2%;
+}
+
+.single-chapter{
+    display: inline-block;
+    padding: 5%;
+    width: 100%;
+    background:rgb(213, 212, 212);
+    border-radius: 10px;
+}
+
+.payments-container{
+    display: flex;
+    justify-content: center;
+}
+
+.payments{
+    margin-top: 5%;
+    border: 3px solid rgba(118, 11, 167, 0.7);
+    width: 85%;
+    padding-top: 3%;
+    background:rgb(213, 212, 212);
+    padding-bottom: 3%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.payments div{
+    text-align: center;
+}
+
+.payments-one{
+    font-size: 130%;
+    font-weight: 800;
+    margin-bottom: 0.5%;  
+}
+
+.payments-two a{
+    color: #000;
+    font-weight: 600;
+}
+
+.payments-two{
+    margin-bottom: 0.5%;
+}
+
+@media screen and (max-width: 500px){
+    .chapter-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 350px){
+    .chapter-list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
